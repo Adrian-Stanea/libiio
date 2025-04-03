@@ -1,0 +1,7 @@
+{
+    "build-type": "cmake",
+    "cmake-args": [
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DWITH_SERIAL_BACKEND=ON"
+    ]
+}
