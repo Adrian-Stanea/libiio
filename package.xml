@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+    <!-- Reference: https://ros.org/reps/rep-0149.html#package-format-3 -->
+    <name>libiio-dev</name>
+    <version>0.26.0</version>
+    <description>ROS2 wrapper of libiio for source builds.</description>
+    <maintainer email="ROS@analog.com">Analog Devices</maintainer>
+    <license>GNU Lesser General Public License 2.1</license>
+    <license>GNU General Public License 2.0</license>
+
+    <url type="website">https://github.com/analogdevicesinc/libiio</url>
+
+    <!-- ROS2 build -->
+    <buildtool_depend>cmake</buildtool_depend>
+
+    <!-- Prerequisites -->
+    <depend>libxml2</depend>
+    <depend>bison</depend>
+    <depend>flex</depend>
+    <depend>cdk-dev</depend>
+
+    <!-- Library backends -->
+    <depend>libaio-dev</depend>
+    <depend>libusb-1.0-dev</depend>
+    <depend>libserialport-dev</depend>
+    <depend>libavahi-client-dev</depend>
+
+    <!-- Build docs -->
+    <doc_depend>doxygen</doc_depend>
+    <doc_depend>graphviz</doc_depend>
+
+    <!-- Build python backend -->
+    <depend>python3</depend>
+    <depend>python3-pip</depend>
+    <depend>python3-setuptools</depend>
+
+    <export>
+        <build_type>cmake</build_type>
+    </export>
+
+</package>
